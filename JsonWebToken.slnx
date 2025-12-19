@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="JsonWebToken.AppHost/JsonWebToken.AppHost.csproj" />
+  <Project Path="JsonWebToken.ServiceDefaults/JsonWebToken.ServiceDefaults.csproj" />
+  <Project Path="WebApplication/WebApplication.csproj" />
+</Solution>
