@@ -1,5 +1,7 @@
 <Solution>
   <Project Path="JsonWebToken.AppHost/JsonWebToken.AppHost.csproj" />
+  <Project Path="JsonWebToken.Core/JsonWebToken.Core.csproj" Id="757ee003-0724-46ac-985e-defded41ea70" />
+  <Project Path="JsonWebToken.Infrastructure/JsonWebToken.Infrastructure.csproj" Id="5c49a3ed-03df-49f4-87aa-ba9fa036df19" />
   <Project Path="JsonWebToken.ServiceDefaults/JsonWebToken.ServiceDefaults.csproj" />
-  <Project Path="WebApplication/WebApplication.csproj" />
+  <Project Path="WebApplication/JsonWebToken.Web.csproj" />
 </Solution>
