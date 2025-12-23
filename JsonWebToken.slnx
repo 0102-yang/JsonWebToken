@@ -3,6 +3,7 @@
   <Project Path="JsonWebToken.Core/JsonWebToken.Core.csproj" Id="757ee003-0724-46ac-985e-defded41ea70" />
   <Project Path="JsonWebToken.Infrastructure.UnitTest/JsonWebToken.Infrastructure.UnitTest.csproj" Id="d9a1b3bd-1d9c-4597-a5a3-27b7e003ea68" />
   <Project Path="JsonWebToken.Infrastructure/JsonWebToken.Infrastructure.csproj" Id="5c49a3ed-03df-49f4-87aa-ba9fa036df19" />
+  <Project Path="JsonWebToken.IntegratedTest/JsonWebToken.IntegratedTest.csproj" Id="bb602f0e-1358-44ff-a528-91b2dd59f298" />
   <Project Path="JsonWebToken.ServiceDefaults/JsonWebToken.ServiceDefaults.csproj" />
   <Project Path="WebApplication/JsonWebToken.Web.csproj" />
 </Solution>

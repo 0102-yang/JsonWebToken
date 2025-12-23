@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WebApplication\WebApplication.csproj" />
+    <ProjectReference Include="..\WebApplication\JsonWebToken.Web.csproj" />
   </ItemGroup>
 
 </Project>
