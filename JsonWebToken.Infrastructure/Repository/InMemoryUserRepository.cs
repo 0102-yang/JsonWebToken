@@ -1,13 +1,14 @@
 ﻿using JsonWebToken.Core.Dto;
 using JsonWebToken.Core.Interfaces;
+using Microsoft.Extensions.Logging;
 
 namespace JsonWebToken.Infrastructure.Repository;
 
-public class InMemoryUserRepository(IPasswordHasher passwordHasher) : IUserRepository
+public class InMemoryUserRepository(IPasswordHasher passwordHasher, ILogger<InMemoryUserRepository> logger) : IUserRepository
 {
     record User(string Username, string PasswordHash, string Role);
 
-    private Dictionary<string, User> users = [];
+    private readonly Dictionary<string, User> users = [];
 
     public bool IsUserExistsByName(string username)
     {
@@ -28,6 +29,7 @@ public class InMemoryUserRepository(IPasswordHasher passwordHasher) : IUserRepos
     {
         var passwordHash = passwordHasher.HashPassword(user.Password);
         var newUser = new User(user.Username, passwordHash, user.Role);
+        logger.LogDebug($"Create User {user.Username} with passwordHash {passwordHash} with role {user.Role}");
         return users.TryAdd(user.Username, newUser);
     }
 }
